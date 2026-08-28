@@ -8,6 +8,6 @@ app_name = 'blog'
 urlpatterns = [
     #path ('url address' , 'view')
     path('', blog_view, name='index'),
-    path('single', blog_single, name='single'),
-    path('single/post-<int:pid>', post_view, name='post_view'),
+    path('<int:pid>', blog_single, name='single'),
+  
 ]
